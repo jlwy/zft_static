@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提现</title>
+<link href="../css/index2015.css" rel="stylesheet" type="text/css">
+<link href="../css/css.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+<script type="text/jscript" src="../js/tab.js"></script>
+</head>
+
+<body>
+<!--head-->
+<iframe src="head.html" width="100%" height="120px" frameborder="0"></iframe>
+<!--当前位置-->
+<div class="now-position"> 当前位置：<a href="#">首页</a>&gt;<a href="#">用户中心</a> </div>
+<!--main-->
+<div class="main">
+  <div class="main_right">
+    <div class="zh-zz-bt">
+      <ul id="tags">
+        <li><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">提现</a></li>
+        <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">申请提现</a></li>
+        <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">提现记录</a></li>
+      </ul>
+    </div>
+    <!--提现-->
+    <div id="tagContent0"> 
+      <!--提现管理-->
+      <div class="tx-cont-wrap"> 
+        <!--设置账号-->
+        <div class="szzh">
+          <div class="szzh-tx-top"> 账号联系人必须先通过身份认证且银行账户名需要和ID账号联系人姓名一致，如有疑问请 <a href="#" id="BizQQWPA">咨询客服</a> </div>
+          <div class="szzh-tj">
+            <ul>
+              <li>
+                <label>真实姓名</label>
+                张三&nbsp;&nbsp;<a href="#">身份认证</a> </li>
+              <li>
+                <label>银行名称</label>
+                <select class="sel">
+                  <option>请选择</option>
+                  <option>中国工商银行</option>
+                  <option>中国建设银行</option>
+                  <option>中国农业银行</option>
+                  <option>中国招商银行</option>
+                  <option>中国银行</option>
+                </select>
+              </li>
+              <li class="yhzh">
+                <label>银行账号</label>
+                <input type="text" class="txt"/>
+                不支持信用卡、16~19位 <span class="err-hint">请正确输入账号</span> </li>
+              <li class="qrzh">
+                <label>确认账号</label>
+                <input type="text" class="txt"/>
+                不支持信用卡、16~19位 <span class="err-hint">账号输入不一致</span> </li>
+              <li class="user-phone">
+                <label>联系人手机</label>
+                <input type="text" class="txt"/>
+                <span class="err-hint">请输入正确的手机号</span> </li>
+              <li class="bot">
+                <label>开户行地址</label>
+                <select class="sel">
+                  <option>请选择</option>
+                  <option>请选择</option>
+                </select>
+                <select class="sel">
+                  <option>请选择</option>
+                  <option>请选择</option>
+                </select>
+                <input type="text" class="txt"/>
+              </li>
+              <li>
+                <label></label>
+                <a href="#" class="qrtj-btn">确认提交</a> </li>
+            </ul>
+          </div>
+          <div class="szzh-tx">
+            <div class="szzh-tx-top"> 账号联系人必须先通过身份认证且银行账户名需要账号联系人姓名一致。 </div>
+            <ul>
+              <li>
+                <label>真实姓名：</label>
+                张三 </li>
+              <li>
+                <label>银行账号：</label>
+                12341234****2345 </li>
+              <li>
+                <label>联系人手机号：</label>
+                13613601360 </li>
+              <li>
+                <label>开户行地址：</label>
+                北京市万泉庄路17号 </li>
+              <li>
+                <label>提现金额：</label>
+                <input type="text" placeholder="￥5900" class="txt"/>
+                <span class="colred"></span> </li>
+              <li class="xgxx"> <a href="#">修改银行信息</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--申请提现-->
+    <div id="tagContent1" style="display:none"> 
+      <!--申请提现-->
+      <div class="sqtx">
+        <div class="szzh-tx">
+          <div class="szzh-tx-top"> 账号联系人必须先通过身份认证且银行账户名需要账号联系人姓名一致。 </div>
+          <ul>
+            <li>
+              <label>真实姓名：</label>
+              张三 </li>
+            <li>
+              <label>银行账号：</label>
+              12341234****2345 </li>
+            <li>
+              <label>联系人手机号：</label>
+              13613601360 </li>
+            <li>
+              <label>开户行地址：</label>
+              北京市万泉庄路17号 </li>
+            <li>
+              <label>提现金额：</label>
+              <input type="txt" class="txt"/>
+            </li>
+            <li>
+              <label></label>
+              <a href="#" class="tx-btn">提现</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--提现记录-->
+    <div id="tagContent2" style="display:none">
+      <div class="txjl">
+        <div class="dj-table-wrap txjl-table">
+          <table class="dj-table ">
+            <thead>
+              <tr>
+                <th width="137">提现账号</th>
+                <th width="67">金额</th>
+                <th width="180">申请提现时间</th>
+                <th width="180">提现成功时间</th>
+                <th width="54">状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20151028101112</td>
+                <td class="money-col">$1500</td>
+                <td>2015-09-20&nbsp;11：54：20</td>
+                <td>2015-09-20&nbsp;11：54：20</td>
+                <td>成功</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="page-box"> 共计9条记录 第1/2页 <a href="#">首页</a> <a href="#">上一页</a> <a href="#" class="on">1</a> <a href="#">2</a> <a href="#">下一页</a> <a href="#">末页</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="gg"><a href="#"><img src="../images/gg-pic2.png"/></a></div>
+<!--footer-->
+<div>
+  <iframe src="footer.html" width="100%" height="120px" frameborder="0" ></iframe>
+</div>
+</body>
+</html>

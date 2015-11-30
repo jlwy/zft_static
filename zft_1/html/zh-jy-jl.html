@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账户交易记录</title>
+<link href="../css/index2015.css" rel="stylesheet" type="text/css">
+<link href="../css/css.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+<script type="text/jscript" src="../js/tab.js"></script>
+</head>
+
+<body>
+<!--head-->
+<iframe src="head.html" width="100%" height="120px" frameborder="0"></iframe>
+<!--当前位置-->
+<div class="now-position"> 当前位置：<a href="#">首页</a>&gt;<a href="#">用户中心</a> </div>
+<!--main-->
+<div class="main">
+  <div class="main_right">
+    <div class="zh-zz-bt">
+      <ul id="tags">
+        <li><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">财务记录</a></li>
+        <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">充值记录</a></li>
+        <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">提现记录</a></li>
+        <li><a onClick="selectTag('tagContent3',this)" href="javascript:void(0)">冻结明细</a></li>
+      </ul>
+    </div>
+    <!--贷款记录-->
+    <div id="tagContent0">
+      <div class="filter-area">
+        <form id="query-form">
+          <div class="tran-filter">
+            <ul>
+              <li class="date-li">
+                <div class="filter-label">起止日期：</div>
+                <div class="filter-content">
+                  <input type="text" class="calendar" >
+                  &nbsp;&nbsp;到&nbsp;&nbsp;
+                  <input type="text" class="calendar">
+                  <a href="#" class="btn-a" >今日</a> <a href="#" class="btn-a">最近1个月</a> <a href="#" class="btn-a">最近3个月</a> <a href="#" class="btn-a">最近6个月</a> <a href="#" class="btn-a" >最近1年</a> </div>
+              </li>
+            </ul>
+          </div>
+          <div id="counts"> </div>
+        </form>
+        <div class="jy-lx">
+          <p class="filter-label">类型分类：</p>
+          <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">还款</a></li>
+            <li><a href="#">收款</a></li>
+          </ul>
+        </div>
+        <div class="jy-lx">
+          <p>交易状态：</p>
+          <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">未付款</a></li>
+            <li><a href="#">进行中</a></li>
+            <li><a href="#">成功</a></li>
+            <li><a href="#">失败</a></li>
+          </ul>
+        </div>
+      </div>
+      <table class="am-table1">
+        <thead>
+          <tr>
+            <th width="20%">流水号</th>
+            <th width="20%">时间</th>
+            <th width="20%">交易事件</th>
+            <th width="10%">收入</th>
+            <th width="10%">支出</th>
+            <th width="10%">交易状态</th>
+            <th width="10%">详情</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>yiyu0990000909090900</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>易域网域名注册</td>
+            <td></td>
+            <td><span class="zc">-25.00</span></td>
+            <td>交易成功</td>
+            <td><a href="#">查看</a></td>
+          </tr>
+          <tr>
+            <td>yiyu0990000909090900</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>易域网域名注册</td>
+            <td><span class="sr">25.00</span></td>
+            <td></td>
+            <td>交易成功</td>
+            <td><a href="#">查看</a></td>
+          </tr>
+          <tr>
+            <td>yiyu0990000909090900</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>易域网域名注册</td>
+            <td></td>
+            <td><span class="zc">-25.00</span></td>
+            <td>交易成功</td>
+            <td><a href="#">查看</a></td>
+          </tr>
+          <tr>
+            <td>yiyu0990000909090900</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>易域网域名注册</td>
+            <td><span class="sr">25.00</span></td>
+            <td></td>
+            <td>交易成功</td>
+            <td><a href="#">查看</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="page-bg">
+        <div class="page"> <span>1-20条</span> <a href="#">首页</a> <a href="#">上一页</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">下一页</a> <a href="#">尾页</a> </div>
+        <p class="ck-qb"><a href="#" class="blue">查看全部记录>></a></p>
+      </div>
+    </div>
+    
+    <!--充值记录-->
+    <div id="tagContent1" style="display:none">
+      <div class="filter-area">
+        <form id="query-form">
+          <div class="tran-filter">
+            <ul>
+              <li class="date-li">
+                <div class="filter-label">起止日期：</div>
+                <div class="filter-content">
+                  <input type="text" class="calendar" >
+                  &nbsp;&nbsp;到&nbsp;&nbsp;
+                  <input type="text" class="calendar">
+                  <a href="#" class="btn-a" >今日</a> <a href="#" class="btn-a">最近1个月</a> <a href="#" class="btn-a">最近3个月</a> <a href="#" class="btn-a">最近6个月</a> <a href="#" class="btn-a" >最近1年</a> </div>
+              </li>
+            </ul>
+          </div>
+          <div id="counts"> </div>
+        </form>
+        <div class="jy-lx">
+          <p>交易状态：</p>
+          <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">未付款</a></li>
+            <li><a href="#">进行中</a></li>
+            <li><a href="#">成功</a></li>
+            <li><a href="#">失败</a></li>
+          </ul>
+        </div>
+      </div>
+      <table class="am-table1">
+        <thead>
+          <tr>
+            <th width="20%">充值时间</th>
+            <th width="20%">交易号</th>
+            <th width="20%">金额</th>
+            <th width="20%">对方</th>
+            <th width="10%">状态</th>
+            <th width="10%">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>yiyu0990</td>
+            <td><span class="zc">-25.00</span></td>
+            <td>中国建设银行</td>
+            <td>成功</td>
+            <td><a href="#">详情</a></td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>yiyu0990</td>
+            <td><span class="zc">-25.00</span></td>
+            <td>中国建设银行</td>
+            <td>成功</td>
+            <td><a href="#">详情</a></td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>yiyu0990</td>
+            <td><span class="zc">-25.00</span></td>
+            <td>中国建设银行</td>
+            <td>成功</td>
+            <td><a href="#">详情</a></td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>yiyu0990</td>
+            <td><span class="zc">-25.00</span></td>
+            <td>中国建设银行</td>
+            <td>成功</td>
+            <td><a href="#">详情</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="page-bg">
+        <div class="page"> <span>1-20条</span> <a href="#">首页</a> <a href="#">上一页</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">下一页</a> <a href="#">尾页</a> </div>
+        <p class="ck-qb"><a href="#" class="blue">查看全部记录>></a></p>
+      </div>
+    </div>
+    
+    <!--提现记录-->
+    <div id="tagContent2" style="display:none">
+      <div class="filter-area">
+        <form id="query-form">
+          <div class="tran-filter">
+            <ul>
+              <li class="date-li">
+                <div class="filter-label">起止日期：</div>
+                <div class="filter-content">
+                  <input type="text" class="calendar" >
+                  &nbsp;&nbsp;到&nbsp;&nbsp;
+                  <input type="text" class="calendar">
+                  <a href="#" class="btn-a" >今日</a> <a href="#" class="btn-a">最近1个月</a> <a href="#" class="btn-a">最近3个月</a> <a href="#" class="btn-a">最近6个月</a> <a href="#" class="btn-a" >最近1年</a> </div>
+              </li>
+            </ul>
+          </div>
+          <div id="counts"> </div>
+        </form>
+        <div class="jy-lx">
+          <p>交易状态：</p>
+          <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">审核中</a></li>
+            <li><a href="#">等待付款</a></li>
+            <li><a href="#">审核失败</a></li>
+            <li><a href="#">成功</a></li>
+            <li><a href="#">取消</a></li>
+          </ul>
+        </div>
+      </div>
+      <table class="am-table1">
+        <thead>
+          <tr>
+            <th width="30%">提现账号</th>
+            <th width="10%">金额</th>
+            <th width="10%">状态</th>
+            <th width="30%">申请提现时间</th>
+            <th width="20%">提现成功时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>73892302439284建设银行</td>
+            <td><span class="sr">￥500</span></td>
+            <td>正常</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>2015-08-06 13:51:49</td>
+          </tr>
+          <tr>
+            <td>73892302439284建设银行</td>
+            <td><span class="sr">￥500</span></td>
+            <td>正常</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>2015-08-06 13:51:49</td>
+          </tr>
+          <tr>
+            <td>73892302439284建设银行</td>
+            <td><span class="sr">￥500</span></td>
+            <td>正常</td>
+            <td>2015-08-06 13:51:49</td>
+            <td>2015-08-06 13:51:49</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="page-bg">
+        <div class="page"> <span>1-20条</span> <a href="#">首页</a> <a href="#">上一页</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">下一页</a> <a href="#">尾页</a> </div>
+        <p class="ck-qb"><a href="#" class="blue">查看全部记录>></a></p>
+      </div>
+    </div>
+    
+    <!--冻结明细-->
+    <div id="tagContent3" style="display:none">
+      <div class="filter-area">
+        <form id="query-form">
+          <div class="tran-filter">
+            <ul>
+              <li class="date-li">
+                <div class="filter-label">起止日期：</div>
+                <div class="filter-content">
+                  <input type="text" class="calendar" >
+                  &nbsp;&nbsp;到&nbsp;&nbsp;
+                  <input type="text" class="calendar">
+                  <a href="#" class="btn-a" >今日</a> <a href="#" class="btn-a">最近1个月</a> <a href="#" class="btn-a">最近3个月</a> <a href="#" class="btn-a">最近6个月</a> <a href="#" class="btn-a" >最近1年</a> </div>
+              </li>
+            </ul>
+          </div>
+          <div id="counts"> </div>
+        </form>
+        <div id="counts"> </div>
+        </m>
+      </div>
+      <table class="am-table1">
+        <thead>
+          <tr>
+            <th width="20%">冻结时间</th>
+            <th width="20%">冻结金额</th>
+            <th width="20%">备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>-25.00</td>
+            <td>域名注册</td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>-25.00</td>
+            <td>域名注册</td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>-25.00</td>
+            <td>域名注册</td>
+          </tr>
+          <tr>
+            <td>2015-08-06 13:51:49</td>
+            <td>-25.00</td>
+            <td>域名注册</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="page-bg">
+        <div class="page"> <span>1-20条</span> <a href="#">首页</a> <a href="#">上一页</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">下一页</a> <a href="#">尾页</a> </div>
+        <p class="ck-qb"><a href="#" class="blue">查看全部记录>></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gg"><a href="#"><img src="../images/gg-pic2.png"/></a></div>
+
+<!--footer-->
+<div>
+  <iframe src="footer.html" width="100%" height="120px" frameborder="0" ></iframe>
+</div>
+</body>
+</html>

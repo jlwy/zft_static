@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.main{width:1140px;margin:0 auto;height:auto;margin-top:20px; overflow:hidden;}
+.help-l{width:180px;height:auto;float:left;color: #000;}
+.help-l ul{width: 178px;height: auto;border:1px solid #ddd;}
+.help-l ul li{width: 154px;border-bottom:1px solid #ddd;height: 40px;line-height: 40px;padding-left: 24px;font-size:16px;}
+.help-l ul li a{color:#666;}
+.help-l ul li a:hover{color: #e67817;}
+.lx-kf{width: 178px;height: auto;border:1px solid #ddd;margin-top:20px;padding-bottom:10px;}
+.lx-kf h4{width: 168px;border-bottom:1px solid #ddd;height: 40px;line-height: 40px;background:#fcfcfc;color:#666;padding-left:10px;font-size:14px;}
+.lx-kf p{margin-left:20px;color:#666;margin-top:10px;}
+.cj-wt{width: 178px;height: auto;border:1px solid #ddd;margin-top:20px;padding-bottom:10px;}
+.cj-wt h4{width: 168px;border-bottom:1px solid #ddd;height: 40px;line-height: 40px;background:#fcfcfc;color:#666;padding-left:10px;font-size:14px;}
+.cj-wt a{display: block;color:#106fc1;margin-left:10px;margin-top:8px;padding-right: 10px;}
+.cj-wt a:hover{color:#F90;}
+
+.help-r{width:930px;height:auto;float:right;}
+.help-wz{width:930px;height:36px;line-height:36px;font-size:14px;color:#656565;border-bottom:1px solid #ddd;}
+.help-wz a{color:#156ec2}
+.help-r ul{width:930px;height:auto;}
+.help-r ul li{width:930px;border-bottom:1px dashed #ddd;height:40px;height:40px;line-height:40px;}
+.help-r ul li a{color:#156ec2;display:block;padding-left:30px;background:url(../images/help-li.png) no-repeat 10px center;font-size:14px;}
+.help-r ul li a:hover{color:#F60;}
+.wenzhang h2{text-align:center;width:100%;color:#666;margin-top:22px;font-weight:normal;color:#09F;}
+.wenzhang .wen{width:920px;height:auto;line-height:26px;color:#666;margin:0 auto;font-size:14px;margin-top:20px;}
+.wenzhang .wen p{margin-top:10px;}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>充值金额</title>
+<link href="../css/index2015.css" rel="stylesheet" type="text/css">
+<link href="../css/css.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<!--head-->
+<iframe src="head.html" width="100%" height="120px" frameborder="0"></iframe>
+<!--head end-->
+
+<div class="now-position"> 当前位置：<a href="#">首页</a>&gt;<a href="#">用户中心</a> </div>
+<!--main-->
+<div class="main">
+  <div class="wrapper">
+    <div class="w-1000">
+      <div class="tabs-header">
+        <ul>
+          <li class="deposit-pay active"><a href="#">充值</a></li>
+        </ul>
+        <a class="recharge-detail" href="#">充值记录</a> </div>
+      <div class="tabs-content active" style="display: block;">
+        <div class="deposit-amount">
+          <p class="recharge-tips">中付通不允许从事无真实交易背景的虚假交易，银行卡转账套现或洗钱等禁止的交易行为，否则交易款项将不能提现。</p>
+          <form>
+            <fieldset>
+              <div class="form-item">
+                <label>充值金额</label>
+                <input ep-input="deposit_amount" ep-checker="depositAmount" class="form-input" name="deposit_amount" size="15" maxlength="10" type="text">
+                <span>元</span> <span class="form-checker"  style="display:none" >请输入充值金额</span> </div>
+            </fieldset>
+          </form>
+          <div class="cz-fs">
+            <h4>支付宝充值</h4>
+            <div class="zfb-cz"><span></span></div>
+            <form>
+              <button>充值</button>
+            </form>
+          </div>
+        </div>
+        <!-- easypay --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--main end--> 
+<!--footer-->
+<div>
+  <iframe src="footer.html" width="100%" height="120px" frameborder="0" ></iframe>
+</div>
+
+<!--footer end-->
+</body>
+</html>
