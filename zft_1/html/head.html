@@ -10,30 +10,53 @@
 
 <body>
 <!--header-->
-<div class="header">
-  <div class="top-bar">
-    <div class="top-bar-inner">
-      <div class="top-user">
-        <span>欢迎登录中付通!</span><span>您的ID:</span><a href="#">784283</a>
-      </div>
-      <div class="top-extra"> <span class="extra-link">客服电话：400-000-0000</span> </div>
+<div class="top-fixed"></div>
+<div class="top-wrap">
+    <div class="top-content clearfix">
+        <p class="phone">400-000-3588</p>
+        <p class="platform-link">
+            <a href="#">域名管理平台</a>|
+            <a href="#">域名交易平台</a>|
+            <a href="#">域名论坛</a>|
+            <a href="#">域名门户</a>|
+            <a href="#">商标版权</a>
+        </p>
+        <!--未登录-->
+        <div class="not-login" style=" display:none;">
+            <a href="#" class="login">登录</a>
+            <a href="#" class="reg">注册</a>
+        </div>
+        <!--登录后-->
+        <div class="logged">
+            <p class="user-name">ADMIN<i></i></p>
+        </div>
+        <p class="msg-center">站内消息（<a href="#" class="color-orange">12</a>）</p>
+        <a href="#" class="wohis">WOHIS查询</a>
     </div>
-  </div>
-  <div class="header-main">
-    <div class="clearfloat header-main-inner">
-      <div class="logo"> <a href="http://www.zft.com/"><img src="../images/logo.gif" alt="中付通"></a> </div>
-      <div class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"> <a href="index.htm" class="nav-link nav-link-current">首页</a> </li>
-          <li class="nav-item"> <a href="user-center.html" class="nav-link">账户中心</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link" target="_blank">财务记录</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link" target="_blank">冻结明细</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">在线充值</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">提现管理</a> </li>
-        </ul>
-      </div>
+</div>
+<!--header-nav-->
+<div class="nav-wrap">
+    <div class="nav-content clearfix">
+        <a href="javascript:;" class="yijie-logo"></a>
+        <div class="nav-right">
+            <ul class="top-nav">
+                <li class="active">
+                    <a href="#" target="_blank">网站首页</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">域名注册心</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">域名交易</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">我的账户</a>
+                </li>
+               
+
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 <!--header end-->
 </body>
