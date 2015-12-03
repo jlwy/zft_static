@@ -474,18 +474,26 @@ html, body, .container {
 	margin-left: 150px;
 }
 .cz {
-	width: 71px;
-	height: 28px;
-	background: #0e90d2;
-	color: #fff;
-	border: none;
+	background: #0e90d2 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 71px;
 }
 .tx {
-	width: 71px;
-	height: 28px;
-	border: 1px solid #0e90d2;
-	background: #fff;
-	margin-left: 10px;
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #0e90d2;
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    text-align: center;
+    width: 71px;
 }
 .jyjl {
 	height: 26px;
@@ -644,13 +652,16 @@ html, body, .container {
 	margin-left: 162px;
 }
 .doc-button-l-1 {
-	width: 100px;
-	height: 36px;
-	background: #f29713;
-	color: #FFF;
-	font-size: 14px;
-	border: none;
-	margin-left: 132px;
+	background: #f29713 no-repeat;
+    border: medium none;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 132px;
+    text-align: center;
+    width: 100px;
 }
 .jl_bt {
 	width: 1200px;
@@ -1652,3 +1663,4 @@ html, body, .container {
 	font-size: 20px;
 	vertical-align: top
 }
+.chaxun{display:block;width:81px;height:32px;background:url(../images/cashdesk-icon-bind-card.png) no-repeat left -337px;line-height:32px;color:#fff;text-align:center;margin-left:325px;margin-top:20px;}
