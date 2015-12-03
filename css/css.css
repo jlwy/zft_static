@@ -265,8 +265,7 @@ html, body, .container {
 .user_xx_bg {
 	width: 100%;
 	height: 150px;
-	background-image: url(../images/user_xx_bg.png);
-	background-repeat: none;
+	background: url(../images/user_xx_bg.png) repeat center center;
 }
 .user_xx {
 	width: 1140px;
@@ -427,7 +426,8 @@ html, body, .container {
 	width: 1198px;
 	height: auto;
 	border: 1px solid #e9e9e9;
-	overflow: hidden
+	overflow: hidden;
+	margin-bottom:20px;
 }
 .zh_xx_bg {
 	width: auto;
@@ -759,18 +759,7 @@ html, body, .container {
 .am-table1 tr a {
 	color: #4691ce
 }
-.gg {
-	width: 1200px;
-	height: 120px;
-	margin: 0 auto;
-	margin-top: 20px;
-}
-.gg2 {
-	width: 1200px;
-	height: 120px;
-	margin-top: 10px;
-	margin: 0 auto
-}
+
 .page-bg {
 	width: 1200px;
 	height: 44px;
@@ -994,6 +983,7 @@ html, body, .container {
 	height: auto;
 	padding-bottom: 35px;
 	padding-top: 20px;
+	margin-bottom:20px;
 }
 .w-1000 {
 	margin: 0 auto;
@@ -1053,7 +1043,7 @@ html, body, .container {
 	-moz-border-right-colors: none;
 	-moz-border-top-colors: none;
 	background: #fafcff none repeat scroll 0 0;
-	border-color: -moz-use-text-color #a4ceff #a4ceff;
+	border-color: #a4ceff;
 	border-image: none;
 	border-style: none solid solid;
 	border-width: 0 2px 2px;
@@ -1117,17 +1107,15 @@ html, body, .container {
 	margin-top: 10px;
 }
 .zfb-cz span {
-	width: 165px;
-	height: 38px;
+	width: 154px;
+	height: 50px;
 	display: block;
 	background: url(../images/bank-icon.png) no-repeat;
-	background-position: -300px -762px;
-	border: 1px solid #ddd;
-	margin-top: 10px;
+	background-position: -336px -766px;
+	margin-top: 20px;
 }
-.zfb-cz span:hover {
-	border: 1px solid #157efb;
-}
+.zfb-cz .active{background: url(../images/cashdesk-icon-bind-card.png) no-repeat 0 -400px;}
+
 .bank-cz {
 	width: 905px;
 	height: auto;
@@ -1233,18 +1221,27 @@ html, body, .container {
 	border: 1px solid #d9d9d9;
 	overflow: hidden;
 	padding-top: 50px;
+	margin-bottom:20px;
 }
 .cz-cg h1 {
 	padding-left: 120px;
 	font-size: 20px;
 	overflow: hidden;
 }
-.cz-cg h1 span {
+.cz-cg h1 .pay1 {
 	display: block;
 	width: 25px;
 	height: 25px;
 	background: url(../images/cashdesk-icon-bind-card.png) no-repeat;
 	background-position: left -460px;
+	float: left
+}
+.cz-cg h1 .pay2 {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/cashdesk-icon-bind-card.png) no-repeat;
+	background-position: left -500px;
 	float: left
 }
 .cz-cg h1 b {

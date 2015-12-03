@@ -3,12 +3,83 @@
 <head>
 <meta charset="utf-8">
 <title>head</title>
-<link href="../css/index2015.css" rel="stylesheet" type="text/css">
-<link href="../css/css.css" rel="stylesheet" type="text/css">
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/index2015.css" rel="stylesheet">
 <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+<script src="../js/jquery.js"></script>
 </head>
 
 <body>
+<!--top-msg-->
+<div class="user-msg-wrap">
+    <div class="top-msg clearfix">
+        <dl class="domain-control">
+            <dt>域名管理</dt>
+            <dd><a href="#">我的域名</a></dd>
+            <dd><a href="#">模板管理</a></dd>
+            <dd><a href="#">域名转入</a></dd>
+            <dd><a href="#">域名转出</a></dd>
+            <dd><a href="#">PUSH域名</a></dd>
+            <dd><a href="#">域名分组</a></dd>
+            <dd><a href="#">批量任务</a></dd>
+            <dd><a href="#">批量续费</a></dd>
+            <dd><a href="#">替他人续费</a></dd>
+        </dl>
+        
+        <dl class="bidding">
+            <dt>预订竞价</dt>
+            <dd><a href="index.html">国内域名竞价</a></dd>
+            <dd><a href="ydjj-en-domain.html">国际域名预订</a></dd>
+            <dd><a href="ydjj-batch-booking.html">批量预订域名</a></dd>
+            <dd><a href="ydjj-my-ymyd.html">我预定的域名</a></dd>
+            <dd><a href="ydjj-biding-domain.html">竞价中的域名</a></dd>
+            <dd><a href="#">我关注的竞价</a></dd>
+        </dl>
+        
+        <dl class="my-seller">
+            <dt>我是卖家</dt>
+            <dd><a href="fixed-price-domain.html">我要卖域名</a></dd>
+            <dd><a href="#">正在出售的域名</a></dd>
+            <dd><a href="#">正在交易的域名</a></dd>
+            <dd><a href="#">交易结束的域名</a></dd>
+            <dd><a href="#">等待审核的域名</a></dd>
+        </dl>
+        <dl class="my-buyer">
+            <dt>我是买家</dt>
+            <dd><a href="#">我出价的域名</a></dd>
+            <dd><a href="#">正在交易的域名</a></dd>
+            <dd><a href="#">交易结束的域名</a></dd>
+            <dd><a href="#">增值服务</a></dd>
+        </dl>
+        <div class="login-msg">
+            <a href="#" class="user-name">ADMIN</a>
+            <p class="user-id">您的ID：92033</p>
+            <p class="my-balance">可用余额：<i class="color-fail">5000</i>元</p>
+            <a href="#" class="passport">我的通行证</a>
+            <p class="exit">
+                <a href="#" class="my-account">我的账户</a>
+                <a href="#" class="log-out">退出登录</a>
+            </p>
+        </div>
+        <dl class="finance-control">
+            <dt>财务管理</dt>
+            <dd><a href="#">在线充值</a></dd>
+            <dd><a href="#">充值订单</a></dd>
+            <dd><a href="#">冻结明细</a></dd>
+            <dd><a href="#">财务记录</a></dd>
+            <dd><a href="#">提现管理</a></dd>
+            <dd><a href="#">申请发票</a></dd>
+            <dd><a href="#">我享受的价格</a></dd>
+        </dl>
+        <dl class="user-control">
+            <dt>用户管理</dt>
+            <dd><a href="#">安全中心</a></dd>
+            <dd><a href="#">认证中心</a></dd>
+            <dd><a href="#">设置中心</a></dd>
+            <dd><a href="#">站内短信</a></dd>
+        </dl>
+    </div>
+</div>
 <!--header-->
 <div class="top-fixed"></div>
 <div class="top-wrap">
@@ -37,14 +108,14 @@
 <!--header-nav-->
 <div class="nav-wrap">
     <div class="nav-content clearfix">
-        <a href="javascript:;" class="yijie-logo"></a>
+        <a href="javascript:;" class="zft-logo"></a>
         <div class="nav-right">
             <ul class="top-nav">
                 <li class="active">
                     <a href="#" target="_blank">网站首页</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">域名注册心</a>
+                    <a href="#" target="_blank">域名注册</a>
                 </li>
                 <li>
                     <a href="#" target="_blank">域名交易</a>
@@ -58,6 +129,27 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+        $(".user-name").on({"mouseover":function(){
+        	$(this).addClass('active');
+			$('.user-msg-wrap').show();	
+        }, "mouseout":function(){
+        	$(this).removeClass('active');
+			$('.user-msg-wrap').hide();	
+        }});
+
+        $(".user-msg-wrap").on({"mouseover":function(){
+        	$(this).show();
+        	$(".user-name").addClass("active");
+        },"mouseout":function(){
+        	$(this).hide();
+        	$(".user-name").removeClass('active');
+        }});
+
+    });
+</script>
 <!--header end-->
 </body>
 </html>
